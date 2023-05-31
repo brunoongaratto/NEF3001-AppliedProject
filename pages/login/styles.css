@@ -1,0 +1,92 @@
+body {
+  font-family: Helvetica, Arial, san-serif;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+.page {
+  background: url("../../assets/casBackground.jpg") no-repeat;
+  width: 100%;
+  display: flex;
+  flex: 1;
+    align-content: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.header {
+  height: 5vh;
+  background-color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.header-logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1vh;
+}
+
+.form-container {
+  width: 250px;
+  margin: 100px auto;
+  background-color: rgba(0, 120, 193, 0.8);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1;
+  padding:30px;
+}
+
+.heading-text {
+  font-family: futura-pt-condensed-extra-bold, Helvetica, Arial, san-serif,
+    serif;
+  font-size: 36px;
+  color: #fff;
+  line-height: 48px;
+  font-weight: 800;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#login-form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+    margin-top: 5%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 5%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 5% 0;
+  background-color: #feb533;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
