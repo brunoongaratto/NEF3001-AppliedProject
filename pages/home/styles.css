@@ -1,8 +1,114 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, san-serif;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  margin: 0;
 }
 
-#home-page {
+.page {
+  background-image: -webkit-linear-gradient(0deg, rgb(94, 133, 252) 0%, rgb(196, 109, 253) 100%);
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-content: center;
+  justify-content: flex-start;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.header {
+  height: 5vh;
+  background-color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1vh;
+  max-width: 200px;
+}
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 0 50px;
+}
+
+.header-nav-button{
+  cursor: pointer;
+}
+
+.header-nav-button:hover{
+  color: rgb(196, 109, 253) ;
+}
+
+.content-container {
+  width: auto;
+  margin: 100px 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  padding:30px;
+}
+
+.content-containert > * { flex: 1; }
+
+#content-actions{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#content-image{
+  background-color: blue;
+  background: url("../../assets/banner-img.png") center no-repeat;
+  width: 50%;
+}
+
+.heading-text {
+  font-family: futura-pt-condensed-extra-bold, Helvetica, Arial, san-serif, serif;
+  font-size: 36px;
+  color: #fff;
+  line-height: 48px;
+  font-weight: 800;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.action-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 2.5em;
+  padding: 0 2em;
+  max-width:200px;
+  color: rgb(196, 109, 253) ;
   text-align: center;
-  margin-top: 100px;
+  font-weight: bold;
 }

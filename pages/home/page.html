@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,9 +7,21 @@
   </head>
   <body>
     <div class="page">
-        <div id="home-page">
-          <h2>Welcome to the Home Page!</h2>
-          <button onclick="logout()">Log Out</button>
+      <div class="header">
+        <img
+          class="header-logo"
+          src="../../assets/logo.svg"
+        ></img>
+        <span class="header-nav">
+          <span class="header-nav-button" onclick="logout()">Log Out</button>
+        </span>
+      </div>
+      <div class="content-container">
+        <div id="content-actions">
+        <div class="heading-text">Welcome to the pharmacy simulator</div>
+        <div class="action-button" onclick="alert('OPENS PLAY SCREEN')">PLAY NOW</div>
+        </div>
+        <div id="content-image">
         </div>
       </div>
     </div>
